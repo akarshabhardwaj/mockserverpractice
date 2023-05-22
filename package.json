@@ -1,0 +1,22 @@
+{
+  "name": "josn-server",
+  "version": "1.0.0",
+  "description": "jsonserver",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akarshabhardwaj/mockserverpractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akarshabhardwaj/mockserverpractice/issues"
+  },
+  "homepage": "https://github.com/akarshabhardwaj/mockserverpractice#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
