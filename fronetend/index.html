@@ -88,11 +88,17 @@
                 document.getElementById("Update_div").style.display = "none";
             })
 
+            let btn2 = document.createElement("button");
+            btn2.innerText = "Delete";
+            btn2.addEventListener("click", () => {
+                HandleDelete(el.id)
+            })
+
 
             h2.innerText = el.first_name + " " + el.last_name;
             h3.innerText = el.email;
             p.innerText = el.gender;
-            div.append(h2, h3, p, btn)
+            div.append(h2, h3, p, btn, btn2)
             cont.append(div)
         })
     }
@@ -143,11 +149,26 @@
         // console.log(new_name, id);
         let obj = { first_name: new_name }
         let res = await fetch(`${url}/${id}`, {
-            method: "Patch",
+            method: "PATCH",
             body: JSON.stringify(obj),
             headers: {
                 "Content-Type": "application/json"
             }
         })
+        alert("Updated")
+        getData()
     }
+
+    async function HandleDelete(id) {
+        console.log(id)
+        let res = await fetch(`${url}/${id}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        alert("Deleted")
+        getData()
+    }
+
 </script>
