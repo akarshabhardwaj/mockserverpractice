@@ -1,7 +1,7 @@
 const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router('db.json'); // <== Will be created later
-const middlewares = jsonServer.defaults({ noCors: true });
+const middlewares = jsonServer.defaults({ noCors: false });
 const port = process.env.PORT || 8080; // <== You can change the port
 
 server.use(middlewares);
