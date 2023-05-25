@@ -3,7 +3,7 @@
         {
             "id": 1,
             "username": "user 1",
-            "email": "jginglell0@networkadvertising.org",
+            "email": "user1#gmail.com",
             "password": "user123",
             "doctor": true
         }
@@ -12,7 +12,7 @@
         {
             "id": 5,
             "name": "Jane Doe",
-            "image": "https://example.com/doctor-image.jpg",
+            "image": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg",
             "specialization": "Dermatologist",
             "experience": 10,
             "location": "Los Angeles",
@@ -23,7 +23,7 @@
         {
             "id": 9,
             "name": "Mark Johnson",
-            "image": "https://example.com/doctor-image.jpg",
+            "image": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg",
             "specialization": "Pediatrician",
             "experience": 5,
             "location": "Chicago",
